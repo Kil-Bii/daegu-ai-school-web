@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <h1>배열(Array)</h1>
+        <script>
+            var topic1 = 'html';
+            var member1 = 'egoing';
+            var topic2 = 'css';
+            var member2 = 'leezche';
+            var topic3 = 'js';
+            var member3 = 'duru';
+
+            var topics = ['html', 'css', 'js'];
+            var members = ['egoing', 'leezche', 'duru'];
+            console.log(topics.length);
+            console.log(topics[0]);
+        </script>
+
+        <h1>반복문(Loop)</h1>
+        <script>
+            console.log(1);
+            for(let i=0; i<3 ;i=i+1){ //초기화 조건;증감 조건;분리언 - i를 0으로 설정, i가 3 미만이면 i를 i+1로 함, i가 3 미만이 아닐 때까지 반복
+                console.log(2);
+                console.log(3);
+            }
+            console.log(4);
+        </script>
+
+        <h1>Array + Loop</h1>
+        <script>
+            topics = ['html', 'css', 'js']
+            for(let i=0; i<topics.length;i=i+1){
+                console.log(topics[i])
+            }
+            for(let i=0; i<topics.length;i=i+1){
+                document.write('<li>'+topics[i]+'</li>')
+            }
+        </script>
+    </body>
+</html>

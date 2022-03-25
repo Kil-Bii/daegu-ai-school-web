@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>웹!!</title>
+<meta charset="utf-8">
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="button" id="dnbtn" value="night" onclick="
+    let button = document.querySelector('#dnbtn');
+    // 만약 현재 버튼의 value가 night라면 아래 코드 실행
+    if(button.value==='night'){
+        document.querySelector('body').style.backgroundColor='#101010';
+        document.querySelector('body').style.color='white';
+        button.value = 'day';
+        document.querySelector('#a1').style.color='white';
+        document.querySelector('#a2').style.color='white';
+        document.querySelector('#a3').style.color='white';
+        document.querySelector('#a4').style.color='white';
+    } else{ // 그렇지 않다면 아래 코드 실행
+        document.querySelector('body').style.backgroundColor='white';
+        document.querySelector('body').style.color='black';
+        button.value = 'night';
+        document.querySelector('#a1').style.color='black';
+        document.querySelector('#a2').style.color='black';
+        document.querySelector('#a3').style.color='black';
+        document.querySelector('#a4').style.color='black';
+    }">
+<h1><a href="index.html">WEB</a></h1>
+<div id="container">
+    <ol>
+        <li><a href="1.html">html</a></li>
+        <li><a href="2.html">css</a></li>
+        <li><a href="3.html">JavaScript</a></li>
+    </ol>
+<div><h2>Welcome!</h2> Hello <a href="http://info.cern.ch/hypertext/WWW/TheProject.html">WEB</a></div>
+</div>
+<div id="disqus_thread"></div>
+
+<script>
+    /**
+    *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+    *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+    /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://daegu-ai-school.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</body>
+</html>
